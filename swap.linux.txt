@@ -1,0 +1,2 @@
+awk '{M=$2;$2=$3;$3=M;}{!arr[$0]++}END{for (i in arr){count++;print i} print " Total Number of lines Before:", NR,"\n","Total Number of lines After:",count;}' day2.txt >> demo2.txt
+awk '{M=$2;$2=$3;$3=M;}{!arr[$0]++}END{for (i in arr){count++;print i} print " Total Number of lines Before:", NR,"\n","Total Number of lines After:",count;}' demo1.txt >> demo2.txt
